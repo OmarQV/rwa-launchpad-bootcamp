@@ -81,3 +81,30 @@ fn test_invest_not_whitelisted() {
     env.mock_all_auths();
     client.invest(&investor, &500);
 }
+
+#[test]
+fn test_minimum_investment_100_fails_500_succeeds() {
+    let env = Env::default();
+    let (admin, payment_token, contract_id, client) = setup_with_payment_token(&env);
+    let investor = Address::generate(&env);
+    let token_admin = StellarAssetClient::new(&env, &payment_token);
+    let token = TokenClient::new(&env, &payment_token);
+
+    token_admin.mint(&investor, &1_000);
+    client.set_whitelist(&admin, &investor, &true);
+
+    assert_eq!(
+        client.try_invest(&investor, &100),
+        Err(Ok(soroban_sdk::Error::from_contract_error(
+            Error::AmountTooLow as u32,
+        )))
+    );
+    assert_eq!(token.balance(&investor), 1_000);
+    assert_eq!(token.balance(&contract_id), 0);
+    assert_eq!(client.balance(&investor), 0);
+
+    assert_eq!(client.invest(&investor, &500), 5);
+    assert_eq!(token.balance(&investor), 500);
+    assert_eq!(token.balance(&contract_id), 500);
+    assert_eq!(client.balance(&investor), 5);
+}
