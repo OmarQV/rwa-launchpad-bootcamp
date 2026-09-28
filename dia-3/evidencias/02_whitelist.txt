@@ -1,0 +1,10 @@
+Red: testnet
+Contrato: CC55XTSV75WWZPB7GBWLAEGWANAVX4Z2RVHOZ3UNSIJ7QRUX3L66EZZD
+Acción: whitelist
+=== set_whitelist ===
+ℹ️  Simulating transaction…
+ℹ️  Signing transaction: 3ad53e9702f5b92c06ddc9262615e914df2acbc4db8cf23d68502d1abec92eaf
+🌎 Sending transaction…
+✅ Transaction submitted successfully!
+🔗 https://stellar.expert/explorer/testnet/tx/3ad53e9702f5b92c06ddc9262615e914df2acbc4db8cf23d68502d1abec92eaf
+

@@ -1,0 +1,6 @@
+Red: testnet
+Contrato: CC55XTSV75WWZPB7GBWLAEGWANAVX4Z2RVHOZ3UNSIJ7QRUX3L66EZZD
+Acción: balance
+=== balance ===
+ℹ️  Simulation identified as read-only. Send by rerunning with `--send=yes`.
+"0"

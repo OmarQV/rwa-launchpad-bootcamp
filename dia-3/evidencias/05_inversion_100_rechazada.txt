@@ -1,0 +1,14 @@
+$ bash scripts/user-tool.sh invest 100
+Red: testnet
+Contrato: CC55XTSV75WWZPB7GBWLAEGWANAVX4Z2RVHOZ3UNSIJ7QRUX3L66EZZD
+Acción: invest
+=== invest ===
+❌ error: transaction simulation failed: HostError: Error(Contract, #7)
+
+Event log (newest first):
+   0: [Diagnostic Event] contract:CC55XTSV75WWZPB7GBWLAEGWANAVX4Z2RVHOZ3UNSIJ7QRUX3L66EZZD, topics:[error, Error(Contract, #7)], data:"escalating error to VM trap from failed host function call: fail_with_error"
+   1: [Diagnostic Event] contract:CC55XTSV75WWZPB7GBWLAEGWANAVX4Z2RVHOZ3UNSIJ7QRUX3L66EZZD, topics:[error, Error(Contract, #7)], data:["failing with contract error", 7]
+   2: [Diagnostic Event] topics:[fn_call, CC55XTSV75WWZPB7GBWLAEGWANAVX4Z2RVHOZ3UNSIJ7QRUX3L66EZZD, invest], data:[GAZ43MLZDV42LFHI5YTTD7ZT3OGCJHHY37DVMUJ6I5WYHNR7AKD742O5, 100]
+
+
+Código de salida: 1

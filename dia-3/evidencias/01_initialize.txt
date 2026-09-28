@@ -1,0 +1,10 @@
+Red: testnet
+Contrato: CC55XTSV75WWZPB7GBWLAEGWANAVX4Z2RVHOZ3UNSIJ7QRUX3L66EZZD
+Acción: initialize
+=== initialize (run once after deploy) ===
+ℹ️  Simulating transaction…
+ℹ️  Signing transaction: 4195e9e81bd3a5b2f76b8a3e9bc97d32cd2f7c70aa8629f7d44f7c9a9fe6bd9d
+🌎 Sending transaction…
+✅ Transaction submitted successfully!
+🔗 https://stellar.expert/explorer/testnet/tx/4195e9e81bd3a5b2f76b8a3e9bc97d32cd2f7c70aa8629f7d44f7c9a9fe6bd9d
+

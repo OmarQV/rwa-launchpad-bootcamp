@@ -1,0 +1,13 @@
+$ bash scripts/user-tool.sh invest 500
+Red: testnet
+Contrato: CC55XTSV75WWZPB7GBWLAEGWANAVX4Z2RVHOZ3UNSIJ7QRUX3L66EZZD
+Acción: invest
+=== invest ===
+ℹ️  Simulating transaction…
+ℹ️  Signing transaction: 0b32567b5757da874056bcfa3ea782681e25ae93ceceff8c0d62ede1389ad7e3
+🌎 Sending transaction…
+✅ Transaction submitted successfully!
+🔗 https://stellar.expert/explorer/testnet/tx/0b32567b5757da874056bcfa3ea782681e25ae93ceceff8c0d62ede1389ad7e3
+📅 CDLZFC3SYJYDZT7K67VZ75HPJVIEUVNIXF47ZG2FB2RMQQVU2HHGCYSC - Success - Event: [{"symbol":"transfer"},{"address":"GAZ43MLZDV42LFHI5YTTD7ZT3OGCJHHY37DVMUJ6I5WYHNR7AKD742O5"},{"address":"CC55XTSV75WWZPB7GBWLAEGWANAVX4Z2RVHOZ3UNSIJ7QRUX3L66EZZD"},{"string":"native"}] = {"i128":"500"}
+📅 CC55XTSV75WWZPB7GBWLAEGWANAVX4Z2RVHOZ3UNSIJ7QRUX3L66EZZD - Success - Event: [{"symbol":"invest"}] = {"vec":[{"address":"GAZ43MLZDV42LFHI5YTTD7ZT3OGCJHHY37DVMUJ6I5WYHNR7AKD742O5"},{"i128":"500"},{"i128":"5"}]}
+"5"
